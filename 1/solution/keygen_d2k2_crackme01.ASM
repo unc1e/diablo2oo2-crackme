@@ -11,8 +11,8 @@ section '.data' data readable writeable
 
 section '.code' code executable
 startPoint:
-	invoke printf, namemsg
-	invoke scanf, scform, name
+	cinvoke printf, namemsg
+	cinvoke scanf, scform, name
 
 	lea ebx, [name]
 	lea esi, [serial]
@@ -106,7 +106,7 @@ startPoint:
 	jmp .back5
 
 	.whEnd2:
-	invoke printf, prform, serial
+	cinvoke printf, prform, serial
 	jmp startPoint
 
 section '.idata'import data readable
@@ -115,4 +115,3 @@ library msvcrt, 'msvcrt.dll'
 import msvcrt,\
        printf, 'printf',\
        scanf, 'scanf'
-
