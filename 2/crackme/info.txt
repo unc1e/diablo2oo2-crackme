@@ -1,0 +1,25 @@
+diablo2oo2's Crackme #2
+-----------------------
+
+name: d2k2_crkme02.exe
+size: ??? bytes
+code: masm32
+date: 14.09.2003
+
+About:
+The file is packed. Try to unpack first and then find a serial
+and make a keygen. If you solve this,send me your keygen+src and
+you can get the src code of this crackme.
+
+Rulez:
+1) No patching
+2) Find serial for your name
+3) Make a Keygen
+
+
+Just for testing that there is a possible serial
+name  : Alex
+serial: AKLIEHXFEKGFDFNH
+
+
+e-mail: diablo2oo2@gmx.net
