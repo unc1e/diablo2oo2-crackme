@@ -52,10 +52,10 @@ void main()
 	j = nl * 0xff;
 	s *= j;
 	s ^= 0xacebdfab;
-	s = ((s >> 24) & 0xff) | 
-		((s << 8) & 0xff0000) | 
-		((s >> 8) & 0xff00) | 
-		((s << 24) & 0xff000000); //bswap edx
+	s = ((s & 0x000000ff) << 24) |
+		((s & 0x0000ff00) << 8) |
+		((s & 0x00ff0000) >> 8) |
+		((s & 0xff000000) >> 24); //bswap edx
 
 	sprintf_s(buf, sizeof(buf), "%lX", s);
 
